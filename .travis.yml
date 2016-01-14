@@ -1,6 +1,7 @@
 env:
   global:
   - GH_REF: github.com/nhz-io/repot.git
+  - secure: fYBuqPvWRz+42vZtvntzrp0VsQy2qkAYxgRp3xgkrSW1Ay8UcRh1wV9tw+CuB3S4JCyFXiSi/EydmVQgYZ5+LaVLmJ+xMgkbGovumHKRlct9kbAZvpwuy4iSdC9gxfVL/qg704u4PCZjKjlsbwXXeFDJPhCsuscoSouIZr1SweXACEyQcjxhunzFuH4HBLy0DCekyuegSieQ6mWtye991edRs1bpJNgd4nK5rtxjc8LSpT1u6Arf3igQxaYVmfOES7ANDuSdwUEwK/0Kg4UM/ozfu/4EH5o1gRghBD+jk0dfx9F5A+JihFPv5r+RX8G8v13CLHxmACl4E3ub4DdPYuf/K75t0LfjnfGRgchfLKzaQHFoUrT6QBL+6IgPHU7QrnYK7Gc/PyI1Kfeamg+JfUAfUJJxCoclHICDnXv//TO75WaJZWMpFJaLP7WKtzotQsl7+GcHhkTlbvlF4yPQ9v5Ewgmbg3ACK6V7eSBPLR7z48xByebSskkKrUMoHkcgDUvtsZh9qh0b4u8top4azDTZ+dWhrxT3fyQbLXwrroPjFSjOVpAVv52BOYqKeP1izmqxxvbjGvR+8cMuMJeugZNxrc2X/7rO+fjGbG39lYVBmmLG9GzWQEFNT+jiA7J1qMcEI+Uf4UyjVebIaXN5O8qH+hho4r2c49dSIQR1YA4=
 language: node_js
 node_js:
 - '0.11'
@@ -12,7 +13,8 @@ script: npm run-script dist
 deploy:
   provider: npm
   email: dev@nhz.io
-  skip_cleanup: true
+  api_key:
+    secure: BengzDeVV4tJHOReulXE/5jtiiIs7Hd/87SxB7FmrQ+8BoSvYOfiqDPL5LTMsRAutLha5dI1dnEi1KJYIpmS2xS3gP6BM0tD5Bb3ye0HktLKDvnWctQt0bs+Wc9bpUHx0ERQGh73t8efUDh2cmPLpW4bSARb0bgKzlW9iYsbx4gjKNtpJsTGaBiSmjwEFZACtLGYunj/Sa5zgKrUmE9u2NX5oD5Su7OWh82y+AW9ZQ7Kigtzlxbr/UvX8Fqu1P0SNA1S6qV/q34RhG5mnSF4TJ07jZT+wLh5bVdS1jmijeyzPPJgK440XfElv8TzqQnADgWpbZazfXtHzNXiS2v0fdXWbhtTDeWLElBAojenCRh2kqEYyA4Jiw9lwm6zzcBD0hIpMqPFqC7FPaxQ3DXcfJxFwMvwg18/0UapLnrwNW5Mp8oIBlmkPzXOvMCL8D95uOgdC3DuLm1xNgt12Nxo4PZGYj52qs5jsRX6xg5teJwY0rT0F7lwi7B3NFxXj7+zKAh1f+4l/gRPuXNnfh/JsveDxyp8q7sXhK6Qgyl8AjPkgAGQ0L/gNfgNo9FmFEE0rQ6+Tf7FjXkvzMUY/dOz2K5KsVE1V28wVXqOI97bd2iki/Yau51JlpQUAtv6iW8q1jMgwrrTL65Dg1ARcLG99ybpIXkmOaYZikwrszosUTM=
   on:
     repo: nhz-io/repot
     branch: master
