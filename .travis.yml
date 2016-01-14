@@ -1,0 +1,20 @@
+env:
+  global:
+  - GH_REF: github.com/nhz-io/repot.git
+language: node_js
+node_js:
+- '0.11'
+- '0.12'
+- iojs
+- '4.2'
+- '5.1'
+script: npm run-script dist
+deploy:
+  provider: npm
+  email: dev@nhz.io
+  skip_cleanup: true
+  on:
+    repo: nhz-io/repot
+    branch: master
+after_deploy:
+- bash ./dev/gh-pages.sh

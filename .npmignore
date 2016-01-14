@@ -1,0 +1,11 @@
+node_modules
+.gitignore
+.npmignore
+.travis.yml
+*.log
+build
+src
+test
+dev
+webpack.config.babel.js
+gh-pages
