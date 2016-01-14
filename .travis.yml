@@ -17,4 +17,4 @@ deploy:
     repo: nhz-io/repot
     branch: master
 after_deploy:
-- bash ./dev/gh-pages.sh
+- bash ./gh-pages.sh
